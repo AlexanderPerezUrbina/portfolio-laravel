@@ -14,12 +14,14 @@
     <meta name="author" content="Alexander Pérez" />
 
     <link rel="stylesheet" href="{{ asset('css/global.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/client/index.css') }}">
 
     @yield('head')
 </head>
 
 <body class="{{$view_name}}">
     @yield('content')
+    @yield('scripts')
 </body>
 
 </html>

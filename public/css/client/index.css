@@ -1,0 +1,24 @@
+.container {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1200px;
+}
+
+.title-section {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+@media (min-width: 576px) {
+    .title-section {
+        font-size: 2.4rem;
+    }
+    .container {
+        padding: 30px;
+    }
+}
+
+section {
+    margin-bottom: 60px;
+}

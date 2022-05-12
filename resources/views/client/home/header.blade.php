@@ -2,12 +2,18 @@
     <div class="content">
         <h1>Hola soy Alexander!</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quaerat debitis corporis omnis ea delectus
-            voluptatibus laudantium libero, quae porro.</p>
-        <div class="btn-container">
+            voluptatibus laudantium libero, quae.</p>
+        <div class="btn-container lg xl xxl">
             <button>Contactame</button>
         </div>
     </div>
-    <div>
-        <img src="https://via.placeholder.com/300" alt="">
+    <div class="img-container">
+        <picture>
+            <source srcset="https://via.placeholder.com/400" media="(min-width: 500px)">
+            <img src="https://via.placeholder.com/300" alt="">
+        </picture>
+        <div class="btn-container xs sm md">
+            <button>Contactame</button>
+        </div>
     </div>
 </header>
