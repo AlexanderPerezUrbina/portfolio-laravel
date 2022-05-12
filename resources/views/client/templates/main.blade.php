@@ -13,10 +13,12 @@
         content="desarrollador web,portafolio web,full stack developer,servicios de diseño web,web design services,web designer,diseñador web" />
     <meta name="author" content="Alexander Pérez" />
 
+    <link rel="stylesheet" href="{{ asset('css/global.css') }}">
+
     @yield('head')
 </head>
 
-<body>
+<body class="{{$view_name}}">
     @yield('content')
 </body>
 

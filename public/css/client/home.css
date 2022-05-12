@@ -1,0 +1,35 @@
+.home header {
+    display: flex;
+    background-color: #d8d8d8;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.home header .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home header h1 {
+    text-align: center;
+    font-size: 2.8rem;
+}
+
+.home header p {
+    margin-bottom: 20px;
+    padding: 0 40px;
+    text-align: center;
+}
+
+.home header .btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.home header button {
+    width: 200px;
+    padding: 20px;
+    font-size: 1.2em;
+}

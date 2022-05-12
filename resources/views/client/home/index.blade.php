@@ -1,14 +1,14 @@
-@extends('client.templates.main')
-
-@section('title', 'Home')
+@extends('client.templates.main', ['view_name' => 'home'])
 
 @section('head')
     <title>Inicio - Portafolio Web Alexander</title>
     <meta name="description"
         content="¡Hola! Soy Alexander Pérez, este es mi portafolio web. Conoce más sobre mí y de mis experiencias, habilidades, y conocimientos, en el ámbito del desarrollo de aplicaciones web." />
     <meta name="robots" content="index, follow" />
+
+    <link rel="stylesheet" href="{{ asset('css/client/home.css') }}">
 @endsection
 
 @section('content')
-
+    @include('client.home.header')
 @endsection
