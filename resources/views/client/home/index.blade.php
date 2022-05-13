@@ -12,12 +12,12 @@
 
 @section('content')
     @include('client.home.header')
-    <div class="container">
+    <main class="container">
         @include('client.home.about')
         @include('client.home.recent-projects')
         @include('client.home.services')
         @include('client.templates.contact')
-    </div>
+    </main>
 @endsection
 
 @section('scripts')

@@ -142,8 +142,8 @@
     width: 250px;
 }
 
-.home .services .service .icon span {
-    font-size: 5rem;
+.home .services .service .icon > * {
+    font-size: 4rem;
 }
 
 .home .services .service h3 {

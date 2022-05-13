@@ -4,9 +4,7 @@
         @for ($i = 0; $i < 5; $i++)
             <div class="service">
                 <div class="icon">
-                    <span class="material-icons-outlined">
-                        view_quilt
-                    </span>
+                    <i class="uil uil-web-grid"></i>
                 </div>
                 <h3>Diseño web</h3>
                 <p>

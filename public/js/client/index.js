@@ -22,7 +22,7 @@ class Contact {
                 icon: 'success',
                 showConfirmButton: false,
                 showCloseButton: true,
-                timer: 4000,
+                timer: 6000,
                 timerProgressBar: true,
             })
         })
