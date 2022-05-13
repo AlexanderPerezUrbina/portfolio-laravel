@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('client.about.index');
 });
+
+Route::fallback(function () {
+    return view('client.not-found.index');
+});

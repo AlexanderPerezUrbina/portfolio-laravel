@@ -1,4 +1,8 @@
-.container {
+:root {
+    --footer-height: 300px;
+}
+
+main.container {
     margin: 0 auto;
     padding: 0 10px;
     max-width: 1200px;
@@ -77,7 +81,8 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 300px;
+    height: var(--footer-height);
+    font-size: 12px;
 }
 
 footer > div:first-child {

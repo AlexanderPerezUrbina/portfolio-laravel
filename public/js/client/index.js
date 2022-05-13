@@ -10,22 +10,24 @@ class Contact {
     }
 
     init() {
-        this.form.addEventListener('submit', async (event) => {
-            event.preventDefault();
-            const formData = new FormData(this.form);
-            const data = await getFormData(this.form);
+        if (this.form) {
+            this.form.addEventListener('submit', async (event) => {
+                event.preventDefault();
+                const formData = new FormData(this.form);
+                const data = await getFormData(this.form);
 
-            const username = data.name.trim().split(' ')[0].trim().split('.')[0].trim().split('-')[0].trim();
-            Swal.fire({
-                title: `Gracias! ${username}`,
-                text: 'Tu mensaje ya ha sido enviado para que lo revise personalmente.',
-                icon: 'success',
-                showConfirmButton: false,
-                showCloseButton: true,
-                timer: 6000,
-                timerProgressBar: true,
+                const username = data.name.trim().split(' ')[0].trim().split('.')[0].trim().split('-')[0].trim();
+                Swal.fire({
+                    title: `Gracias! ${username}`,
+                    text: 'Tu mensaje ya ha sido enviado para que lo revise personalmente.',
+                    icon: 'success',
+                    showConfirmButton: false,
+                    showCloseButton: true,
+                    timer: 6000,
+                    timerProgressBar: true,
+                })
             })
-        })
+        }
     }
 }
 

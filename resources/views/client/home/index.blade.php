@@ -1,7 +1,7 @@
 @extends('client.layouts.main', ['view_name' => 'home'])
 
 @section('head')
-    <title>Inicio - Portafolio Web Alexander</title>
+    <title>Inicio - {{ env('APP_NAME') }}</title>
     <meta name="description"
         content="¡Hola! Soy Alexander Pérez, este es mi portafolio web. Conoce más sobre mí y de mis experiencias, habilidades, y conocimientos, en el ámbito del desarrollo de aplicaciones web." />
     <meta name="robots" content="index, follow" />
