@@ -1,4 +1,4 @@
-@extends('client.templates.main', ['view_name' => 'home'])
+@extends('client.layouts.main', ['view_name' => 'home'])
 
 @section('head')
     <title>Inicio - Portafolio Web Alexander</title>
@@ -15,6 +15,8 @@
     <div class="container">
         @include('client.home.about')
         @include('client.home.recent-projects')
+        @include('client.home.services')
+        @include('client.templates.contact')
     </div>
 @endsection
 
