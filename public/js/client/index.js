@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const nav = new Nav();
     const contact = new Contact();
 
+    nav.init();
     contact.init();
 });
 
@@ -27,6 +29,18 @@ class Contact {
                     timerProgressBar: true,
                 })
             })
+        }
+    }
+}
+
+class Nav {
+    constructor() {
+        this.nav = document.querySelector('nav.dynamic');
+    }
+
+    init() {
+        if (this.nav) {
+
         }
     }
 }

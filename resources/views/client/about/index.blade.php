@@ -1,9 +1,9 @@
 @extends('client.layouts.main', ['view_name' => 'about'])
 
 @section('head')
-    <title>Sobre mí - {{ env('APP_NAME') }}</title>
+    <title>Sobre mí | {{ env('APP_NAME') }}</title>
     <meta name="description"
-        content="Alexander Pérez Urbina, nacido el 10 de febrero del 2005, empezo sus estudios a los 13 años cuando vio lo maravilloso que era el mundo de la programacion, y con" />
+        content="Alexander Pérez Urbina, nacido el 10 de febrero del 2005, San Felipe, Chile. Empezo sus estudios a los 13 años queriendo ser un programador web." />
     <meta name="robots" content="index, follow" />
 @endsection
 

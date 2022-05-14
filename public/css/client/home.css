@@ -6,7 +6,7 @@
     background-color: #d8d8d8;
     padding: 0 10px;
     justify-content: space-around;
-    height: 100vh;
+    height: calc(100vh - var(--nav-height));
 }
 
 .home header .content {
@@ -130,8 +130,6 @@
     margin: 0 auto;
     justify-items: center;
 }
-
-
 
 .home .services .service {
     display: flex;
