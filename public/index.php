@@ -16,9 +16,16 @@ define('LARAVEL_START', microtime(true));
 |
 */
 
-if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php')) {
-    require $maintenance;
+if (env('APP_ENV') === 'production') {
+    if (file_exists($maintenance = __DIR__.'/../portfolio-laravel/storage/framework/maintenance.php')) {
+        require $maintenance;
+    }
+} else {
+    if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php')) {
+        require $maintenance;
+    }
 }
+
 
 /*
 |--------------------------------------------------------------------------
@@ -30,8 +37,11 @@ if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php'))
 | into the script here so we don't need to manually load our classes.
 |
 */
-
-require __DIR__.'/../vendor/autoload.php';
+if (env('APP_ENV') === 'production') {
+    require __DIR__.'/../portfolio-laravel/vendor/autoload.php';
+} else {
+    require __DIR__.'/../vendor/autoload.php';
+}
 
 /*
 |--------------------------------------------------------------------------
@@ -44,7 +54,11 @@ require __DIR__.'/../vendor/autoload.php';
 |
 */
 
-$app = require_once __DIR__.'/../bootstrap/app.php';
+if (env('APP_ENV') === 'production') {
+    $app = require_once __DIR__.'/../portfolio-laravel/bootstrap/app.php';
+} else {
+    $app = require_once __DIR__.'/../bootstrap/app.php';
+}
 
 $kernel = $app->make(Kernel::class);
 

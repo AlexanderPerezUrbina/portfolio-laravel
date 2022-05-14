@@ -1,13 +1,13 @@
 <footer>
     <div>
         <ul class="social-networks">
-            <li class="social-network instagram">
-                <a class="gradient" href="https://www.instagram.com/_alexwishu_/" target="__blank">
+            <li class="social-network">
+                <a href="https://www.instagram.com/_alexwishu_/" target="__blank">
                     <i class="uil uil-instagram"></i>
                 </a>
             </li>
             <li class="social-network">
-                <a class="gradient" href="https://www.facebook.com/alexander.perezurbina.10/" target="__blank">
+                <a href="https://www.facebook.com/alexander.perezurbina.10/" target="__blank">
                     <i class="uil uil-facebook-f"></i>
                 </a>
             </li>

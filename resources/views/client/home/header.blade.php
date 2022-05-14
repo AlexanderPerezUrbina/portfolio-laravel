@@ -9,8 +9,8 @@
     </div>
     <div class="img-container">
         <picture>
-            <source srcset="https://via.placeholder.com/400" media="(min-width: 500px)">
-            <img src="https://via.placeholder.com/300" alt="">
+            <source srcset="{{ image_placeholder("400") }}" media="(min-width: 500px)">
+            <img src="{{ image_placeholder("300") }}" alt="">
         </picture>
         <div class="btn-container xs sm md">
             <button>Contactame</button>
