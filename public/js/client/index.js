@@ -35,13 +35,28 @@ class Contact {
 
 class Nav {
     constructor() {
-        this.nav = document.querySelector('nav.dynamic');
+        this.navTopBar = document.querySelector('nav.topbar');
+        this.navSideBar = document.querySelector('nav.sidebar');
+        this.navOverlay = document.querySelector('.nav-overlay');
     }
 
     init() {
-        if (this.nav) {
+        if (this.navTopBar && this.navSideBar) {
+            const btnToggleSidebar = this.navTopBar.querySelector('button.sidebar-btn');
 
+            btnToggleSidebar.addEventListener('click', () => {
+                this.navSideBar.classList.toggle('active');
+                btnToggleSidebar.classList.toggle('active');
+            });
+
+            if (this.navOverlay) {
+                this.navOverlay.addEventListener('click', () => {
+                    this.navSideBar.classList.remove('active');
+                    btnToggleSidebar.classList.remove('active');
+                });
+            }
         }
+
     }
 }
 
