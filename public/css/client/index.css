@@ -188,6 +188,7 @@ section.contact form {
     max-width: 600px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 section.contact form input,
@@ -212,13 +213,24 @@ section.contact form textarea {
     height: 150px;
 }
 
+section.contact form .btn-container {
+    width: 100%;
+}
+
 section.contact form button[type="submit"] {
+    max-width: 200px;
     width: 100%;
     padding: 10px;
 }
 
 section.contact ul li i {
     font-size: 22px;
+}
+
+@media (min-width: 425px) {
+    section.contact form {
+        padding: 0 20px;
+    }
 }
 
 @media (min-width: 576px) {
@@ -328,8 +340,6 @@ footer .content .main {
 footer .content .main > * {
     flex: 1;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 footer .content .main .logo-container {

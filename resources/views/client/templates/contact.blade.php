@@ -36,7 +36,9 @@
             <div class="g-recaptcha-container">
                 <div class="g-recaptcha" data-sitekey="{{env('PUBLIC_KEY_RECAPTCHA')}}"></div>
             </div>
-            <button type="submit">Enviar</button>
+            <div class="btn-container">
+                <button type="submit">Enviar</button>
+            </div>
         </form>
     </div>
 </section>
