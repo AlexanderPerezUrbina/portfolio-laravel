@@ -28,10 +28,14 @@
             </li>
         </ul> --}}
         <form>
+            @csrf
             <input name="name" type="text" placeholder="Tu nombre">
             <input name="email" type="email" placeholder="Tu correo electronico">
             <input name="phone" type="text" placeholder="Tu numero de telefono (opcional)">
             <textarea name="message" id="" placeholder="Mensaje..."></textarea>
+            <div class="g-recaptcha-container">
+                <div class="g-recaptcha" data-sitekey="{{env('PUBLIC_KEY_RECAPTCHA')}}"></div>
+            </div>
             <button type="submit">Enviar</button>
         </form>
     </div>

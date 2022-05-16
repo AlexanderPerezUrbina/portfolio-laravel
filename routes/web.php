@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,6 +21,8 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('client.about.index');
 });
+
+Route::post('/contact', [ContactController::class, 'send']);
 
 Route::fallback(function () {
     return view('client.not-found.index');

@@ -200,6 +200,10 @@ section.contact form textarea {
     border-radius: 10px;
 }
 
+section.contact form .g-recaptcha-container {
+    margin-bottom: 20px;
+}
+
 section.contact form input {
     height: 50px;
 }

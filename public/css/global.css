@@ -31,6 +31,46 @@ textarea {
     resize: none;
 }
 
+.g-recaptcha {
+    transform:scale(0.77) translate(-50%, -50%);
+    transform-origin:0 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.g-recaptcha-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    height: 60px;
+}
+
+@media (min-width: 375px) {
+    .g-recaptcha {
+        transform:scale(0.9) translate(-50%, -50%);
+    }
+}
+
+@media (min-width: 425px) {
+    .g-recaptcha {
+        transform:scale(0.9) translate(-50%, -50%);
+    }
+}
+
+@media (min-width: 500px) {
+    .g-recaptcha {
+        transform:scale(1) translate(-50%, -50%);
+    }
+
+    .g-recaptcha-container {
+        height: 78px;
+    }
+}
+
+
 .xs,
 .sm,
 .md,

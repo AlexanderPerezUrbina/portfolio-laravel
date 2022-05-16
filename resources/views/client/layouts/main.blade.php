@@ -27,6 +27,7 @@
     @yield('content')
     @include('client.templates.footer')
 
+    <script async src="https://www.google.com/recaptcha/api.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="{{ asset('js/client/index.js') }}"></script>
     @yield('scripts')
