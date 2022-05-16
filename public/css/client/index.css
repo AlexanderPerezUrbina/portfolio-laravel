@@ -1,6 +1,5 @@
 :root {
     --nav-height: 80px;
-    --footer-height: 300px;
 }
 
 nav.topbar {
@@ -230,26 +229,182 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: var(--footer-height);
-    font-size: 12px;
+    font-size: 16px;
 }
 
-footer > div:first-child {
+footer .top {
+    display: flex;
+    flex-direction: column;
+    background-color: #cacaca;
+    padding: 10px 0;
+}
+
+footer .top .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .top .contact i {
+    font-size: 2.5em;
+    margin-right: 10px;
+}
+
+footer .top .contact .text {
+    font-size: 0.8em;
+    font-weight: 700;
+}
+
+@media (min-width: 375px) {
+    footer .top .contact .text {
+        font-size: 1em;
+    }
+
+    footer .top .contact i {
+        font-size: 2.7em;
+    }
+}
+
+@media (min-width: 475px) {
+    footer .top .contact .text {
+        font-size: 1.2em;
+    }
+
+    footer .top .contact i {
+        font-size: 3em;
+    }
+}
+
+@media (min-width: 576px) {
+    footer .top {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    footer .top .contact .text {
+        font-size: 1em;
+    }
+
+    footer .top .contact i {
+        font-size: 2.5em;
+    }
+}
+
+@media (min-width: 768px) {
+    footer .top .contact .text {
+        font-size: 1.1em;
+    }
+
+    footer .top .contact i {
+        font-size: 3em;
+    }
+}
+
+@media (min-width: 992px) {
+    footer .top .contact .text {
+        font-size: 1.2em;
+    }
+
+    footer .top .contact i {
+        font-size: 3.6em;
+    }
+}
+
+footer .content {
     height: 100%;
-    padding: 30px;
+    padding: 30px 40px;
     background-color: #d8d8d8;
+}
+
+footer .content .main {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .content .main > * {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .content .main .logo-container {
+    max-width: 400px;
+    width: 100%;
+}
+
+footer .content .main .links {
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+footer .content .main h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+footer .content .main .links ul li {
+    margin-bottom: 5px;
+}
+
+footer .content img.logo {
+    width: 100%;
+    max-width: 100px;
+}
+
+footer .content .main .newsletter {
+    margin-top: 20px;
+}
+
+footer .content .main .newsletter p {
+    margin-bottom: 10px;
+}
+
+footer .content .main .newsletter input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+footer .content .main .newsletter button[type="submit"] {
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+}
+
+@media (min-width: 600px) {
+    footer .content .main {
+        flex-direction: row;
+    }
+
+    footer .content .main .links {
+        justify-content: center;
+    }
 }
 
 footer .social-networks {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
-footer .social-networks .social-network {
+footer .social-networks ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .social-networks li {
     border-radius: 50%;
     background-color: #000000;
+    margin: 0 5px;
 }
 
-footer .social-networks .social-network a {
+footer .social-networks li a {
     background-color: black;
     color: #ffffff;
     border-radius: 50%;
@@ -263,6 +418,6 @@ footer .social-networks .social-network a {
 
 footer .bottom {
     text-align: center;
-    padding: 10px 0;
+    padding: 14px 0;
     background-color: #b1b1b1;
 }
