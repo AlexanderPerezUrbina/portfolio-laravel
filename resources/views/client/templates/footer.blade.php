@@ -73,7 +73,7 @@
         </div>
     </div>
     <div class="bottom">
-        Derechos reservados &copy; Alexander Pérez {{ date('Y') }}
+        Alexander Pérez {{ date('Y') }}
     </div>
 </footer>
 
