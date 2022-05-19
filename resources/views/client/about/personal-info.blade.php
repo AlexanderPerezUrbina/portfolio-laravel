@@ -11,7 +11,7 @@
             </ul>
         </div>
         <div class="img-wrapper">
-            <img src="{{ image_placeholder('300x400') }}" alt="">
+            <img loading="lazy" src="{{ image_placeholder('300x400') }}" alt="">
             <ul>
                 <li class="social-network">
                     <a href="https://www.linkedin.com/in/alexander-perez-urbina-8602ab1b9/" target="_blank">
