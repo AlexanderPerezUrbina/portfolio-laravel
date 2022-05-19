@@ -43,6 +43,7 @@
     $weight: getWeight($parsed_font-weight);
 
     @font-face {
+        font-display: swap;
         font-family: $font-family;
         src: url("/assets/fonts/#{$font-family}/#{$font-family}-#{capitalize($font-weight)}.ttf");
         font-weight: $weight;
