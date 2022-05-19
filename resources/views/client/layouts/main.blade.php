@@ -15,10 +15,6 @@
     <meta name="publisher" content="Alexander Pérez" />
     <meta http-equiv="expires" content="86400"/>
 
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.1/css/line.css">
-    <link rel="stylesheet" href="{{ asset('css/global.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/client/index.css') }}">
-
     @yield('head')
 </head>
 

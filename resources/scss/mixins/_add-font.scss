@@ -1,0 +1,50 @@
+@function capitalize($string) {
+    @return to-upper-case(str-slice($string, 1, 1)) + str-slice($string, 2);
+}
+
+@function getWeight($weight) {
+    @if $weight == "Thin" {
+        @return 100;
+    } @else if $weight == "ExtraLight" {
+        @return 200;
+    } @else if $weight == "Light" {
+        @return 300;
+    } @else if $weight == "Regular" {
+        @return 400;
+    } @else if $weight == "Medium" {
+        @return 500;
+    } @else if $weight == "SemiBold" {
+        @return 600;
+    } @else if $weight == "Bold" {
+        @return 700;
+    } @else if $weight == "ExtraBold" {
+        @return 800;
+    } @else if $weight == "Black" {
+        @return 900;
+    } @else {
+        @return 400;
+    }
+}
+
+@mixin add-font($font-family, $font-weight) {
+    $parsed_font-family: capitalize(
+        $string:
+            to-lower-case(
+                $string: $font-family,
+            ),
+    );
+    $parsed_font-weight: capitalize(
+        $string:
+            to-lower-case(
+                $string: $font-weight,
+            ),
+    );
+
+    $weight: getWeight($parsed_font-weight);
+
+    @font-face {
+        font-family: $font-family;
+        src: url("/assets/fonts/#{$font-family}/#{$font-family}-#{capitalize($font-weight)}.ttf");
+        font-weight: $weight;
+    }
+}

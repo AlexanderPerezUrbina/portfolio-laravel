@@ -1,0 +1,41 @@
+@use '../global';
+
+@use 'templates/nav';
+@use 'templates/footer';
+@use 'templates/contact';
+
+@import url('https://unicons.iconscout.com/release/v3.0.1/css/line.css');
+
+main.container {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1200px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin: 10px 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+@media (min-width: 576px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+    h2 {
+        font-size: 2.2rem;
+    }
+    main.container {
+        padding: 0 30px;
+    }
+}
+
+section {
+    margin: 100px 0 200px 0;
+}
