@@ -20,5 +20,5 @@
 @endsection
 
 @section('scripts')
-    <script async defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 @endsection
