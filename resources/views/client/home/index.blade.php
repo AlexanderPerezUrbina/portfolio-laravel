@@ -6,7 +6,7 @@
         content="¡Hola! Soy Alexander Pérez, este es mi portafolio web. Conoce más sobre mí y de mis experiencias, habilidades, y conocimientos, en el ámbito del desarrollo de aplicaciones web." />
     <meta name="robots" content="index, follow" />
 
-    <link rel="stylesheet" href="{{ asset('css/app/home/index.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/app/home/index.css') }}" media="print" onload="this.media='all'">
 @endsection
 
 @section('content')
@@ -20,6 +20,5 @@
 @endsection
 
 @section('scripts')
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="{{ asset('js/client/home.js') }}"></script>
+    <script async defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 @endsection

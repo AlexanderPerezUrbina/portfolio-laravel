@@ -6,7 +6,7 @@
         content="Alexander Pérez Urbina, nacido el 10 de febrero del 2005, San Felipe, Chile. Empezo sus estudios a los 13 años queriendo ser un programador web." />
     <meta name="robots" content="index, follow" />
 
-    <link rel="stylesheet" href="{{ asset('css/app/about/index.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/app/about/index.css') }}" media="print" onload="this.media='all'>
 @endsection
 
 @section('content')

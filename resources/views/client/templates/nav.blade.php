@@ -1,7 +1,7 @@
 <nav class="topbar">
     <div class="logo-container">
         <a href="/">
-            <img src="{{ asset('assets/svgs/ap-logo.svg') }}" alt="AP logo">
+            <img loading="lazy" src="{{ asset('assets/svgs/ap-logo.svg') }}" alt="AP logo">
         </a>
     </div>
     <ul class="navbar">

@@ -15,7 +15,7 @@
         <div class="main">
             <div class="logo-container">
                 <div>
-                    <img src="{{ asset('assets/svgs/ap-logo.svg') }}" alt="AP Logo" class="logo">
+                    <img loading="lazy" src="{{ asset('assets/svgs/ap-logo.svg') }}" alt="AP Logo" class="logo">
                     <p>
                         Servicios de desarrollo web y diseño web.
                         Para todas tus necesidades y gustos.

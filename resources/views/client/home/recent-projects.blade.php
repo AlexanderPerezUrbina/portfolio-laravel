@@ -5,7 +5,7 @@
             <div class="swiper-wrapper">
                 @for ($i = 0; $i < 5; $i++)
                     <div class="swiper-slide">
-                        <img class="no-user-select" src="{{ image_placeholder("300") }}">
+                        <img loading="lazy" class="no-user-select" src="{{ image_placeholder("300") }}">
                     </div>
                 @endfor
             </div>

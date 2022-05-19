@@ -2,7 +2,7 @@
     <h2 class="title-section">Sobre mí</h2>
     <div class="wrapper">
         <div class="img-container">
-            <img src="{{ image_placeholder("300") }}" alt="">
+            <img loading="lazy" src="{{ image_placeholder("300") }}" alt="">
         </div>
         <div class="content">
             <p>
