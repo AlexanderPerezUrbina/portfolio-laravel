@@ -4,7 +4,7 @@
     <title>Pagina no encontrada - {{ env('APP_NAME') }}</title>
     <meta name="robots" content="noindex, nofollow" />
 
-    <link rel="stylesheet" href="{{ asset('css/app/not-found/index.css') }}" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="{{ asset('css/app/not-found/index.css') }}">
 @endsection
 
 @section('content')
