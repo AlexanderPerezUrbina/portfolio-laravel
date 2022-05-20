@@ -13,7 +13,7 @@
         content="desarrollador web,portafolio web,full stack developer,servicios de diseño web,web design services,web designer,diseñador web" />
     <meta name="author" content="Alexander Pérez" />
     <meta name="publisher" content="Alexander Pérez" />
-    <meta http-equiv="expires" content="86400"/>
+    <meta http-equiv="expires" content="172800"/>
 
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.1/css/line.css">
 
