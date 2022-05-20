@@ -15,7 +15,7 @@
     <meta name="publisher" content="Alexander Pérez" />
     <meta http-equiv="expires" content="86400"/>
 
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.1/css/line.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.1/css/line.css">
 
     @yield('head')
 </head>
@@ -26,7 +26,7 @@
     @include('client.templates.footer')
 
     <script defer src="https://www.google.com/recaptcha/api.js"></script>
-    <script defer src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script defer src="{{ asset('js/client/index.js') }}"></script>
     @yield('scripts')
 </body>
