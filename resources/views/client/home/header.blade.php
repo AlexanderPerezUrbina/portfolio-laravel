@@ -10,7 +10,7 @@
     <div class="img-container">
         <picture>
             <source srcset="{{ image_placeholder("400") }}" media="(min-width: 500px)">
-            <img loading="lazy" src="{{ image_placeholder("300") }}" alt="">
+            <img src="{{ image_placeholder("300") }}" alt="">
         </picture>
         <div class="btn-container xs sm md">
             <button>Contactame</button>
