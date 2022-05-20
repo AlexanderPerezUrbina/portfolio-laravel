@@ -25,9 +25,9 @@
     @yield('content')
     @include('client.templates.footer')
 
-    <script defer src="https://www.google.com/recaptcha/api.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script defer src="{{ asset('js/client/index.js') }}"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+    <script src="{{ asset('js/client/index.js') }}" defer></script>
     @yield('scripts')
 </body>
 
