@@ -3,7 +3,7 @@
     <div class="wrapper">
         @for ($i = 0; $i < 5; $i++)
             <div class="project">
-                <img loading="lazy" src="{{ image_placeholder('300x300') }}" alt="">
+                <img loading="lazy" src="{{ image_placeholder('300') }}" alt="">
                 <a target="_blank" href="https://youtube.com">
                     <div class="img-overlay"></div>
                 </a>
