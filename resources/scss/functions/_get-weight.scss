@@ -1,0 +1,23 @@
+@function get-weight($weight) {
+    @if $weight == "Thin" {
+        @return 100;
+    } @else if $weight == "ExtraLight" {
+        @return 200;
+    } @else if $weight == "Light" {
+        @return 300;
+    } @else if $weight == "Regular" {
+        @return 400;
+    } @else if $weight == "Medium" {
+        @return 500;
+    } @else if $weight == "SemiBold" {
+        @return 600;
+    } @else if $weight == "Bold" {
+        @return 700;
+    } @else if $weight == "ExtraBold" {
+        @return 800;
+    } @else if $weight == "Black" {
+        @return 900;
+    } @else {
+        @return 400;
+    }
+}

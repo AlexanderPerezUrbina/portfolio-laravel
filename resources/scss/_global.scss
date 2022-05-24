@@ -1,4 +1,5 @@
-@use 'mixins/add-font.scss' as *;
+@use 'mixins' as *;
+@use 'utilities';
 
 @import 'normalize';
 

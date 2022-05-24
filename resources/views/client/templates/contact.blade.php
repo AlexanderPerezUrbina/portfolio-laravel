@@ -34,7 +34,7 @@
             <input name="phone" type="text" placeholder="Tu numero de telefono (opcional)">
             <textarea name="message" id="" placeholder="Mensaje..."></textarea>
             <div class="g-recaptcha-container">
-                <div class="g-recaptcha" data-sitekey="{{env('PUBLIC_KEY_RECAPTCHA')}}"></div>
+                <div id="g-recaptcha-client-contact" class="g-recaptcha" data-sitekey="{{env('PUBLIC_KEY_RECAPTCHA')}}"></div>
             </div>
             <div class="btn-container">
                 <button type="submit">Enviar</button>

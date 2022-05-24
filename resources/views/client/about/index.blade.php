@@ -13,7 +13,7 @@
     <main class="container">
         <h1>Sobre mí</h1>
         @include('client.about.personal-info')
-        @include('client.about.my-history')
+        @include('client.about.portfolio')
         @include('client.templates.contact')
     </main>
 @endsection

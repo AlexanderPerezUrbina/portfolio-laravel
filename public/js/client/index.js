@@ -56,9 +56,10 @@ class Contact {
                             timerProgressBar: true,
                         })
                     }
-
+                    grecaptcha.reset(document.querySelector('#g-recaptcha-client-contact'));
                 } catch (error) {
                     console.log(error);
+                    grecaptcha.reset(document.querySelector('#g-recaptcha-client-contact'));
                 }
             })
         }
