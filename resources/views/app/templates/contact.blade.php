@@ -29,9 +29,9 @@
         </ul> --}}
         <form>
             @csrf
-            <input name="name" type="text" placeholder="Tu nombre">
-            <input name="email" type="email" placeholder="Tu correo electronico">
-            <input name="phone" type="text" placeholder="Tu numero de telefono (opcional)">
+            <input class="input-form" name="name" type="text" placeholder="Tu nombre">
+            <input class="input-form" name="email" type="email" placeholder="Tu correo electronico">
+            <input class="input-form" name="phone" type="text" placeholder="Tu numero de telefono (opcional)">
             <textarea name="message" id="" placeholder="Mensaje..."></textarea>
             <div class="g-recaptcha-container">
                 <div id="g-recaptcha-client-contact" class="g-recaptcha" data-sitekey="{{env('PUBLIC_KEY_RECAPTCHA')}}"></div>

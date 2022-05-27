@@ -1,13 +1,19 @@
 @use 'mixins' as *;
 @use 'utilities';
+@use 'components';
+@use 'variables' as *;
 
-@import 'normalize';
+@use 'normalize';
 
 @include add-font("Montserrat", "Regular");
 @include add-font("Montserrat", "Bold");
 
 @include add-font("RobotoSlab", "Regular");
 @include add-font("RobotoSlab", "Bold");
+
+:root {
+    --swiper-theme-color: #{$primary-color};
+}
 
 * {
     box-sizing: border-box;
@@ -30,7 +36,8 @@ i.uil {
 }
 
 body {
-    background-color: #eeeeee;
+    background-color: $background-color;
+    color: $text-color;
     margin: 0;
 }
 

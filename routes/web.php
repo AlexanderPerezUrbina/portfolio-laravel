@@ -15,15 +15,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('client.home.index');
+    return view('app.home.index');
 });
 
 Route::get('/about', function () {
-    return view('client.about.index');
+    return view('app.about.index');
 });
 
 Route::post('/contact', [ContactController::class, 'send']);
 
 Route::fallback(function () {
-    return view('client.not-found.index');
+    return view('app.not-found.index');
 });

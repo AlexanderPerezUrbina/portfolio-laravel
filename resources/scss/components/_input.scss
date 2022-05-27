@@ -1,0 +1,9 @@
+@use '../variables' as *;
+
+.input-form {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $primary-color;
+    padding: 10px;
+    outline: none;
+}

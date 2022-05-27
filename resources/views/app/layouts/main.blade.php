@@ -18,17 +18,18 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.1/css/line.css" media="print"
         onload="this.media='all'">
 
+
     @yield('head')
 </head>
 
 <body class="{{ $view_name ?? '' }}">
-    @include('client.templates.nav')
+    @include('app.templates.nav')
     @yield('content')
-    @include('client.templates.footer')
+    @include('app.templates.footer')
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
-    <script src="{{ asset('js/client/index.js') }}" defer></script>
+    <script src="{{ asset('js/app/index.js') }}" defer></script>
     @yield('scripts')
 </body>
 

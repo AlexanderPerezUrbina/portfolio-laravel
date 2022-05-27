@@ -1,9 +1,10 @@
 @use '../variables' as *;
+@use '../../variables' as global_variables;
 
 .home header {
     display: flex;
     flex-direction: column;
-    background-color: #d8d8d8;
+    background-color: global_variables.$background-contrast-color;
     padding: 0 10px;
     justify-content: space-around;
     height: calc(100vh - $nav-height);

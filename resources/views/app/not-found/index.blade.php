@@ -1,10 +1,10 @@
-@extends('client.layouts.main', ['view_name' => 'not-found'])
+@extends('app.layouts.main', ['view_name' => 'not-found'])
 
 @section('head')
     <title>Pagina no encontrada - {{ env('APP_NAME') }}</title>
     <meta name="robots" content="noindex, nofollow" />
 
-    <link rel="stylesheet" href="{{ asset('css/app/not-found/index.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/app/not-found.css') }}">
 @endsection
 
 @section('content')

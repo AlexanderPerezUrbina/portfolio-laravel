@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+const fs = require('fs');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,7 +12,36 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css', [
-        //
-    ]);
+const loadCss = (route = '/') => {
+    const parsedRoute = route.replace(/^\/|\/$/g, '');
+
+    const pagesRoutes = fs.readdirSync(`resources/scss/${parsedRoute}`)
+        .filter(file => {
+            if (!fs.lstatSync(`resources/scss/${parsedRoute}/${file}`).isDirectory()) {
+                return false;
+            }
+
+            if (!fs.existsSync(`resources/scss/${parsedRoute}/${file}/index.scss`)) {
+                return false;
+            }
+
+            return true;
+        });
+
+    if (!pagesRoutes.length) {
+        return;
+    }
+
+    pagesRoutes.forEach(page => {
+        const sassPath = `resources/scss/${parsedRoute}/${page}/index.scss`;
+        const cssPath = `public/css/${parsedRoute}/${page}.css`;
+
+        mix.sass(sassPath, cssPath, {
+            sassOptions: {
+                outputStyle: 'compressed',
+            }
+        });
+    });
+}
+
+loadCss('/app');
